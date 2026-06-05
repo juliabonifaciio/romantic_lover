@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#241b58"/>
+      <stop offset="0.5" stop-color="#7b51ff"/>
+      <stop offset="1" stop-color="#ff8bc7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g5)"/>
+  <circle cx="780" cy="425" r="150" fill="#ffffff" opacity="0.10"/>
+  <circle cx="625" cy="510" r="195" fill="#08091a" opacity="0.22"/>
+  <text x="600" y="430" text-anchor="middle" fill="#ffffff" font-size="54" font-family="Arial">SUBSTITUA PELA SUA FOTO 5</text>
+  <text x="600" y="495" text-anchor="middle" fill="#eee5ff" font-size="26" font-family="Arial">assets/images/foto-5.svg</text>
+</svg>

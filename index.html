@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A história de amor de Tatyane e Julia, contada em memórias, música e momentos especiais.">
+  <title>Tatyane & Julia | Nossa História</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+  <div class="entry-screen" id="entryScreen">
+    <div class="entry-aura"></div>
+    <div class="entry-card">
+      <span class="mini-heart">♥</span>
+      <span class="eyebrow">Uma história escrita pelo destino</span>
+      <h1>Tatyane <span>&</span> Julia</h1>
+      <p>Entre, dê o play na nossa música e reviva cada capítulo do nosso amor.</p>
+      <button class="primary-button" id="enterButton" type="button">
+        <span>Entrar na nossa história</span>
+        <b>♥</b>
+      </button>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#inicio">T <span>♥</span> J</a>
+    <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#contador">Nosso tempo</a>
+      <a href="#historia">Momentos</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#carta">Carta</a>
+    </nav>
+    <button class="music-button" id="musicButton" type="button" aria-label="Pausar música">
+      <span class="music-bars"><i></i><i></i><i></i></span>
+      <span id="musicStatus">Música</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-vignette"></div>
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow">Desde 6 de março de 2026</span>
+        <h2>Tatyane <span>&</span> Julia</h2>
+        <p>Você chegou e fez o mundo inteiro parecer pequeno perto do que eu sinto quando estou ao seu lado.</p>
+        <a class="primary-button" href="#contador"><span>Viver nossa história</span><b>♥</b></a>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true"><span></span><small>Role para continuar</small></div>
+    </section>
+
+    <section class="counter-section section" id="contador">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Nosso tempo juntas</span>
+        <h2>Cada segundo com você virou parte de mim</h2>
+        <p>Desde 6 de março de 2026, o tempo deixou de ser apenas tempo e passou a ser a medida da nossa história.</p>
+      </div>
+      <div class="counter-shell reveal">
+        <div class="counter-heart" aria-hidden="true">♥</div>
+        <div class="counter-grid" id="relationshipCounter" data-start-date="2026-03-06T00:00:00-03:00">
+          <article class="counter-card"><strong id="years">0</strong><span>Anos</span></article>
+          <article class="counter-card"><strong id="months">0</strong><span>Meses</span></article>
+          <article class="counter-card"><strong id="days">0</strong><span>Dias</span></article>
+          <article class="counter-card"><strong id="hours">0</strong><span>Horas</span></article>
+          <article class="counter-card"><strong id="minutes">0</strong><span>Minutos</span></article>
+          <article class="counter-card"><strong id="seconds">0</strong><span>Segundos</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section section" id="historia">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Momentos que marcaram</span>
+        <h2>Onde a nossa história começou a ganhar eternidade</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-marker"><span>1</span></div>
+          <div class="timeline-date">20 DE FEVEREIRO DE 2026</div>
+          <div class="timeline-card">
+            <span class="chapter">Primeiro capítulo</span>
+            <h3>Eu te enviei a primeira mensagem</h3>
+            <p>Com a maior vergonha do mundo eu te mandei uma mensagem no Instagram depois de te <strong>SECAR</strong> na empresa te olhando a cada segundo. Meu coração desparava só de <strong>PENSAR</strong> em você. Na segunda-feira eu te beijei e ali eu achei meu lugar na Terra, achei meu propósito. Eu achei o amor da minha vida, quem eu quero passar <strong>TODOS</strong> os dias.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-marker"><span>2</span></div>
+          <div class="timeline-date">25 DE FEVEREIRO DE 2026</div>
+          <div class="timeline-card">
+            <span class="chapter">Nossa primeira saída</span>
+            <h3>Fomos na PV</h3>
+            <p>A primeira vez que nós saímos eu estava nervosa, com medo, não consegui nem tomar o sorvete direito, mas ir na PV foi diferente, te beijar, te sentir, conversar com você até 21h. Essa é minha memória favorita, na vida, para sempre meu momento favorito é do seu lado.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-marker"><span>3</span></div>
+          <div class="timeline-date">6 DE MARÇO DE 2026</div>
+          <div class="timeline-card featured">
+            <span class="chapter">O nosso sim</span>
+            <h3>Namoro</h3>
+            <p>Cara, eu sei que nenhuma de nós entramos nisso pensando em algo a mais, mas em dois dias eu queria casar com você. Você foi minha paixão, meu tesão, meu desejo, minha esperança, minha salvação e se tornou isso apenas me respondendo no Insta, me olhando na empresa, fazendo um café só para mim. Você tem noção? Eu sei que eu me tornei sua namorada depois de gemer seu nome e ouvir você falando que também me amava. Nada me faz mais feliz que isso.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-marker infinite"><span>∞</span></div>
+          <div class="timeline-date">SEMPRE</div>
+          <div class="timeline-card forever">
+            <span class="chapter">O capítulo que não termina</span>
+            <h3>Nosso para sempre.</h3>
+            <p>Eu quero a eternidade com você, o casamento, nossa filha, ver o Davi crescendo ao <strong>SEU LADO</strong>, viver o mundo com você, superar qualquer problema. Minha vida é sua, Tatyane! Minha alma e meu coração é seu. Mesmo com atitudes feias e ruins que eu infelizmente sei que existem e sei da dor que você passou, nada me importa mais do que você e eu vou fazer sempre meu máximo por você, eu quero ser melhor para você, quero crescer e evoluir por <strong>NÓS</strong>. Isso eu digo no íntimo e no profissional. Eu vou fazer tudo por você, por nós e pelos nossos.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-section section" id="galeria">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Galeria de momentos</span>
+        <h2>O amor também mora nas imagens</h2>
+        <p>Substitua as imagens da pasta por fotos de vocês. Clique em qualquer foto para ampliar.</p>
+      </div>
+
+      <div class="gallery-filters reveal" role="group" aria-label="Filtros da galeria">
+        <button class="filter-button active" type="button" data-filter="all">Todas</button>
+        <button class="filter-button" type="button" data-filter="encontros">Encontros</button>
+        <button class="filter-button" type="button" data-filter="carinho">Carinho</button>
+        <button class="filter-button" type="button" data-filter="cotidiano">Nosso dia a dia</button>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <button class="gallery-item tall" type="button" data-category="encontros" data-full="assets/images/foto-1.jpg" data-caption="O começo de nós">
+          <img src="assets/images/foto-1.jpg" alt="Espaço reservado para uma foto especial de Tatyane e Julia">
+          <span>O começo de nós</span>
+        </button>
+        <button class="gallery-item" type="button" data-category="carinho" data-full="assets/images/foto-2.jpg" data-caption="Meu lugar favorito">
+          <img src="assets/images/foto-2.jpg" alt="Espaço reservado para uma foto romântica">
+          <span>Meu lugar favorito</span>
+        </button>
+        <button class="gallery-item" type="button" data-category="cotidiano" data-full="assets/images/foto-3.jpg" data-caption="Nós em qualquer dia">
+          <img src="assets/images/foto-3.jpg" alt="Espaço reservado para uma foto do cotidiano">
+          <span>Nós em qualquer dia</span>
+        </button>
+        <button class="gallery-item wide" type="button" data-category="encontros" data-full="assets/images/foto-4.jpg" data-caption="Uma memória para sempre">
+          <img src="assets/images/foto-4.jpg" alt="Espaço reservado para uma foto de encontro">
+          <span>Uma memória para sempre</span>
+        </button>
+        <button class="gallery-item" type="button" data-category="carinho" data-full="assets/images/foto-5.jpg" data-caption="Seu abraço é casa">
+          <img src="assets/images/foto-5.jpg" alt="Espaço reservado para uma foto de carinho">
+          <span>Seu abraço é casa</span>
+        </button>
+        <button class="gallery-item" type="button" data-category="cotidiano" data-full="assets/images/foto-6.jpg" data-caption="A felicidade mora aqui">
+          <img src="assets/images/foto-6.jpg" alt="Espaço reservado para uma foto feliz">
+          <span>A felicidade mora aqui</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="carta">
+      <div class="letter-wrapper reveal">
+        <div class="sealed-envelope" aria-hidden="true"><span>♥</span></div>
+        <div class="letter-intro">
+          <span class="eyebrow">Uma carta para Tatyane</span>
+          <h2>Tudo o que eu ainda preciso te dizer</h2>
+          <p>Esta carta guarda a verdade do que eu reconheço, do que eu quero mudar e do amor que escolho viver ao seu lado.</p>
+          <button class="primary-button" id="openLetterButton" type="button"><span>Abrir minha carta</span><b>♥</b></button>
+        </div>
+
+        <article class="letter" id="letter" aria-hidden="true">
+          <div class="letter-paper">
+            <span class="letter-date">Para Tatyane, com todo o meu amor</span>
+            <h3>Minha Tatyane,</h3>
+            <p>Eu sou imatura, Tatyane, eu sou imatura, mimada e teimosa. Eu nunca vejo meu erro de primeiro momento e me rebaixo quando reconheço para afetar você. Eu pensei isso ontem antes de dormir, nos meus defeitos que fizeram eu te ferir e você chorar. Sempre foi difícil para mim reconhecer defeitos "feios", defeitos de verdade, que eu sinto VERGONHA de falar, que eu minto e omito por medo de reações que eu me contradigo e gaguejo que eu tenho MEDO das consequências da VERDADE e eu prefiro criar um conto de fadas para outras pessoas e pra mim.</p>
+            <p>Isso é FEIO, mas eu reconheço, reconheço e não quero me diminuir e me rebaixar, quero olhar para mim e ver meu potencial e MUDAR, SER MELHOR. Hoje isso não é só por mim, principalmente por mim mas tanto quanto por <strong>você</strong>.</p>
+            <p>Você é meu grande e verdadeiro, amor, Tatyane! Eu falo tanto que eu te amo mas não sei se consigo demonstrar a intensidade do quanto eu te quero BEM, do quanto eu amo e o quanto meu coração palpita só de te olhar, o quanto seu sorriso me faz entrar em órbita. Seu corpo faz minha pele queimar. Eu sei dos meus erros, sei o que eu devo melhorar e o quanto eu vou fazer de TUDO por você. Meu máximo é seu. Eu viveria e morreria por você, meu amor! Daria tudo que eu tenho por você e pelo seu filho, que é minha salvação, ver o Davi crescer é meu grande sonho, ajudar ele, estar com ele, viver tudo com ele e com a mãe dele. Eu quero tudo, com você eu quero tudo que essa vida possa permitir, conhecer o mundo ao seu lado, conhecer as situações ruins e sair delas do seu lado, ser o seu colo e seu apoio e melhorar ao seu lado. Você é minha, eu te amo e te almejo, <strong>honro</strong> estar do seu lado e espero mostrar isso em cada passo a partir de hoje. Você é a única pessoa desse mundo que eu desejo que esteja melhor do que eu, quero você mais feliz, mais realizada, mais bem sucedida, quero que todo meu esforço seja para você e isso é só 1% que eu consigo demonstrar do meu amor por você.</p>
+            <p>Eu REZO por nós, por nossa vida, e sei que o laço vermelho de parceria que há em mim termina em você. E eu vou lutar por nós e me humilhar e implorar se for necessário. Eu quero você e só você, meu mundo é você e EU SOU SUA.</p>
+            <p>Que o para sempre seja nosso. Eu ALMO você.</p>
+            <p class="letter-signature">Com o maior carinho e respeito do mundo,<br>Sua noiva, Julia</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-section section">
+      <div class="final-content reveal">
+        <span class="eyebrow">Tatyane & Julia</span>
+        <h2>Você é o meu lugar no mundo.</h2>
+        <p>Que este site continue recebendo novas fotos, novas datas e muitos capítulos da nossa eternidade.</p>
+        <a class="secondary-button" href="#inicio">Voltar ao começo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com amor para Tatyane e Julia.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Visualização ampliada da foto">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fechar imagem">×</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" type="button" aria-label="Imagem anterior">‹</button>
+    <figure>
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox-nav next" id="lightboxNext" type="button" aria-label="Próxima imagem">›</button>
+  </div>
+
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="assets/audio/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
